@@ -35,6 +35,7 @@ public class SpringBootDevtoolsAmqpApplication {
 
 
 	public static void main(String[] args) {
+		// Comment this line to see the error
 		System.setProperty("spring.devtools.restart.enabled", "false");
 		SpringApplication.run(SpringBootDevtoolsAmqpApplication.class, args);
 	}
