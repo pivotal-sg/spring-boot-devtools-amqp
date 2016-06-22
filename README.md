@@ -14,3 +14,8 @@ Perform the following steps in the project directory:
 1. `docker-compose up`
 1. Copy the machine's IP address obtained from this command: `docker-machine ip default`
 1. Change the IP address for RabbitMQ host in `src/main/resources/application.yaml` to the one you just copied
+1. `./gradlew build`
+
+## Running the application
+
+`./gradlew bootRun`
