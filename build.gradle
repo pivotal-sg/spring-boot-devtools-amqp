@@ -24,6 +24,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
+	flatDir { dirs 'libs' }
 	mavenCentral()
 	maven { url "https://repo.spring.io/snapshot" }
 	maven { url "https://repo.spring.io/milestone" }
@@ -32,6 +33,7 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-amqp')
+	compile('org.springframework.amqp:spring-amqp:1.6.1.AMQP619')
 	compile('org.springframework.boot:spring-boot-devtools')
 	compile('com.fasterxml.jackson.core:jackson-annotations:2.8.0.rc2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
